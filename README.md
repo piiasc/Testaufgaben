@@ -26,15 +26,15 @@ solchen Spam verhindern kann?
 ## Datenbanken
 
 1. Gib alle Nutzer aus, die sich in den letzten 30 Tagen registriert haben.
-SELECT * FROM users WHERE DATEDIFF(day, created_at, NOW()) <= 30; (musste DATEDIFF ergooglen)
-2. Finde alle Nutzer, deren E-Mail mehrfach vorkommt.
-Hier bin ich mir leider unsicher, würde aber GROUP BY oder HAVING COUNT benutzen
-3. Wie würdest du verhindern, dass doppelte E-Mails gespeichert werden?
-CREATE TABLE users (
-    id INT PRIMARY KEY,
-    name VARCHAR(255),
-    email VARCHAR(255) UNIQUE,
-    created_at DATETIME
-);
-4. Warum sollte man SQL-Queries nicht direkt mit Benutzereingaben bauen?
-Weil es eine Sicherheitslücke für SQL-Injections sein könnte und Angreifer einfach die Eingaben ändern können
+    SELECT * FROM users WHERE DATEDIFF(day, created_at, NOW()) <= 30; (musste DATEDIFF ergooglen)
+3. Finde alle Nutzer, deren E-Mail mehrfach vorkommt.
+    Hier bin ich mir leider unsicher, würde aber GROUP BY oder HAVING COUNT benutzen
+4. Wie würdest du verhindern, dass doppelte E-Mails gespeichert werden?
+    CREATE TABLE users (
+        id INT PRIMARY KEY,
+        name VARCHAR(255),
+        email VARCHAR(255) UNIQUE,
+        created_at DATETIME
+    );
+5. Warum sollte man SQL-Queries nicht direkt mit Benutzereingaben bauen?
+    Weil es eine Sicherheitslücke für SQL-Injections sein könnte und Angreifer einfach die Eingaben ändern können
