@@ -14,13 +14,14 @@ Da ich mich erst einmal mit Bootstrap 5 vertraut machen musste, dauerte die Erst
 
 2. Welche Verbesserungen würdest du empfehlen und warum?
 
-Name & Mail auf Länge und feste Zeichen prüfen, damit Validierung und Authentifizierung durchgeführt wird
+- Name & Mail auf Länge und feste Zeichen prüfen, damit Validierung und Authentifizierung durchgeführt wird
 
-Noch eine ergänzende Frage aus der Praxis: 
+3. Noch eine ergänzende Frage aus der Praxis: 
 Ein Kunde wird mit Spam über das Kontaktformular zugespammt. Welche Möglichkeiten fallen dir ein wie man 
 solchen Spam verhindern kann?
 
-(robots.txt, ich bin mir jedoch unsicher, ob das Spam-Bots abhält), Verstecktes Formularfeld, das von Nutzer nicht gesehen wird aber von Bots automatisch ausgefüllt wird
+- Verstecktes Formularfeld, das von Nutzer nicht gesehen wird aber von Bots automatisch ausgefüllt wird
+- (robots.txt, ich bin mir jedoch unsicher, ob das Spam-Bots abhält)
 
 ## Datenbanken
 
